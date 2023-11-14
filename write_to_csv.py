@@ -7,5 +7,3 @@ def write_to_file():
     with open('notes.csv', 'a', newline='', encoding='utf-8') as file:
         writer = csv.writer(file, delimiter=";")
         writer.writerow(note)
-        
-write_to_file()
