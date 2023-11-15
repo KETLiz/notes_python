@@ -7,6 +7,7 @@ def edit_note():
     search_list_note = search_model.search_note()
     note_body = search_model.search_body_note(search_list_note)
     new_note_body = input('Введите новое тело заметки: ')
+    
     f = open('notes.csv', 'r', encoding='utf-8')
     file = csv.reader(f, delimiter=";")
     lists = list(file)
